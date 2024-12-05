@@ -6,12 +6,7 @@ from words_list import *
 from stages_lives import *
 
 def clear():
-    # For Windows
-    if os.name == 'nt':
-        os.system('cls')
-    # For macOS and Linux
-    else:
-        os.system('clear')
+    os.system('cls' if os.name == 'nt' else os.system('clear'))
 
 while True:
     clear()
